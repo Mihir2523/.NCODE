@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NCODE</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="edit.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/darcula.min.css">
+</head>
+<body>
+    <header>
+      <div class="navbar-wrapper">
+        
+        <div class="menu">
+          <i class="bx bx-x cross"></i>
+          <ul class="list">
+            <li class="list-item"><i class="bx bx-log-in"></i><a href="">Login</a></li>
+            <li class="list-item"><i class="bx bx-brain"></i><a href="">Neuralize</a></li>
+            <li class="list-item"><i class="bx bx-brain"></i><a class="ai-help" href="">AI Help</a></li>
+            <li class="list-item"><i class="bx bx-code"></i><a href="">Editor</a></li>
+           <li class="list-item"><i class="bx bx-cog"></i><a href="">Settings</a></li>
+         </ul>
+         <div class="social-media">
+          <i class='bx bxl-facebook facebook'></i>
+          <i class='bx bxl-instagram insta'></i>
+          <i class='bx bxl-linkedin linkedin'></i>
+        
+          <!-- X logo is yet to be added-->
+        
+         </div>
+        </div>
+        <nav class="navbar">
+          <div class="dropdown">
+            <i class="bx bx-menu dropbutton"></i>
+          </div>
+          <div class="logo">
+            <img src="">
+            <h1 class="title">n&nbsp;code</h1>
+          </div>
+          <div class="user-login">
+            <i class="bx bx-user-circle"></i>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="matplotlib-plots"></div>
+      <div class="settings-tab"></div>
+      <div class="ai ai-none"> 
+        <img src="robo.png">   
+        <textarea placeholder="Ask any programme,it will be added to code editor" class="search" name="search"></textarea>
+        <i class="bx bx-search"></i>
+      </div>
+      <div class="buttons">
+        <button class="btn run"><i class="bx bx-code alt"></i></button>
+
+        <button class="btn refresh"><i class="bx bx-refresh"></i></button>
+      </div>
+      
+      <div class="editorspace">
+        <div class="editor">
+          <textarea id="code" style="height: 100%; width: 100%;"></textarea>
+        </div>
+        <div class="output">b</div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.20.0/full/pyodide.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/mode/python/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/addon/edit/closebrackets.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/6.65.7/theme/night.min.css">
+    <script src="edit.js"></script>
+
+</body>
+</html>
